@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import Header from './Header/Header.react';
+import Footer from './Footer/Footer.react';
+
+import AppMain from './AppMain/AppMain.react';
+
 class App extends Component {
+
+  footerInfo ={
+    designer:"Ramesh",
+    copyRight:"2019-2022"
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        
+          <Header majorHeading={"Radio Taxi"}/>
+         <AppMain/>
+        <footer>
+         <Footer info={this.footerInfo}></Footer>
+        </footer>
       </div>
     );
   }
