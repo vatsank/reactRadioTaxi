@@ -18,8 +18,8 @@ class DriverDashBoard extends React.Component {
 
     componentDidMount(){
 
-    const url = 'http://localhost:4040/drivers';
-
+    const url = process.env.REACT_APP_API_URL;
+    
     fetch(url).
          then(res => res.json()).
           then(data =>

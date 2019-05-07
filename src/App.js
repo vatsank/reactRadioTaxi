@@ -5,6 +5,7 @@ import Header from './Header/Header.react';
 import Footer from './Footer/Footer.react';
 
 import AppMain from './AppMain/AppMain.react';
+import FilterList from './FilterList/FilterList.react';
 
 class App extends Component {
 
@@ -18,6 +19,7 @@ class App extends Component {
         
           <Header majorHeading={"Radio Taxi"}/>
          <AppMain/>
+         <FilterList></FilterList>
         <footer>
          <Footer info={this.footerInfo}></Footer>
         </footer>

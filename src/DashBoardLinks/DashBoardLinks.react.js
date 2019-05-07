@@ -8,10 +8,10 @@ const DashBoardLinks = () => {
         <div >
 
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Payment History</a></li>
-            <li><a href="">Request Loan</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="abv">Home</a></li>
+            <li><a href="ddf">Payment History</a></li>
+            <li><a href="dd">Request Loan</a></li>
+            <li><a href="dd">Contact</a></li>
         </ul>
         
         </div>
